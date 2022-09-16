@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="#" />
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+      <div class="title-container">
+        <h1>Cálculo de capacidad de endeudamiento</h1>
+      </div>
+  </nav>
+  <section>
+    <div class="main-container">
+      <div class="data-container">
+        <section class="income-container">
+          <div class="income-input">
+            <label for="income" class="income-title title-input">Ingresos</label>
+            <input id="income" placeholder="Ingresos" type="number">
+          </div>
+        </section>
+    
+        <section class="expense-container">
+          <div class="expensive-input">
+            <label for="expense" class="expense-title title-input">Gastos</label>
+            <input id="expense" placeholder="Gastos" type="number">
+          </div>
+          <div class="expensive-input">
+            <label for="saving" class="expense-title title-input">Ahorro</label>
+            <input id="saving" placeholder="Ahorro" type="number">
+          </div>
+          
+        </section>
+      </div>
+      
+      <div class="button-container">
+        <button id="btnCalcular" onclick="borrowingCapacity()" type="button">Calcular</button>
+      </div>
+  
+      <section class="result">
+        <p>La cantidad que puedes endeudarte es:</p>
+        <br/>
+        <p id="indebtedness"></p>
+      </section>
+      
+    </div>
+  </section>
+  
+  <script src="./capacidadDeEndeudamiento.js"></script>
+</body>
+</html>
