@@ -30,6 +30,7 @@ nav{
 .title-container {
     justify-content: center;
     display: flex;
+    min-width: 370px;
 }
 .title-container h1{
     background-color: var(--blue);
@@ -38,7 +39,7 @@ nav{
     margin: 10px 0;
     border-radius: 40px;
     text-align: center;
-   font-size: 3rem; 
+    font-size: 3rem; 
 }
 /*-----------------------------------Estilos de Contenido-----------------------------------------*/
 
@@ -46,7 +47,7 @@ nav{
 .main-container .data-container{
     display: flex;
     width: 70%;
-    min-width: 350px;
+    min-width: 370px;
     max-width: 500px;
     height: 250px;
     margin: 0 auto;
@@ -69,11 +70,13 @@ nav{
 
 
 .title-input{
-    padding: 20px 0 ;
+    padding: 10px 10px;
     font-size: 2rem;
     border-radius: 36px;
-    display: flex;
+    max-width: fit-content;
     justify-content: center;
+    text-align: center;
+    margin: 0 auto;
 }
 .income-title{
     color: var(--white);
@@ -96,6 +99,12 @@ nav{
     text-align: center;
     font-size: 1.6rem;
     margin: 20px 0;
+}
+
+.income-input,
+.expensive-input {
+    display: flex;
+    flex-direction: column;
 }
 
 .button-container {
